@@ -13,6 +13,7 @@
 		}
 	</script>
     <style>
+    /* These are here just for this page */
         h2.fill{
             padding: 0.25em 0.5em;
             margin: 3em 0 1em;
