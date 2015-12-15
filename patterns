@@ -603,12 +603,12 @@
         var hash = window.location.hash;
         if (!hash || hash == '#') {    hash = '#first'; }
         $(document).ready(function () {
-                tabContainers.hide();
-                tabContainers.filter(hash).show();
-                $('ul.tabNavigation a').removeClass('selected');
-                $('ul.tabNavigation a[href="' + hash + '"]').addClass('selected');
-                window.scrollTo(0,0);
-                return false;
+            tabContainers.hide();
+            tabContainers.filter(hash).show();
+            $('ul.tabNavigation a').removeClass('selected');
+            $('ul.tabNavigation a[href="' + hash + '"]').addClass('selected');
+            window.scrollTo(0,0);
+            return false;
         });
     });
 </script>
