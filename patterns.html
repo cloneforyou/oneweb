@@ -13,7 +13,6 @@
 		}
 	</script>
     <style>
-    /* These are here just for this page */
         h2.fill{
             padding: 0.25em 0.5em;
             margin: 3em 0 1em;
@@ -81,7 +80,7 @@
         
     </style>
 </head>
-<body>
+<body class="nav-is-fixed">
 	<header class="cd-main-header">
         <a class="cd-logo" href="http://www.qmul.ac.uk"><img src="http://www.qmul.ac.uk/assets2012/images/logo.png" alt="Queen Mary University of London" /></a>
         <ul class="cd-header-buttons">
@@ -603,12 +602,12 @@
         var hash = window.location.hash;
         if (!hash || hash == '#') {    hash = '#first'; }
         $(document).ready(function () {
-            tabContainers.hide();
-            tabContainers.filter(hash).show();
-            $('ul.tabNavigation a').removeClass('selected');
-            $('ul.tabNavigation a[href="' + hash + '"]').addClass('selected');
-            window.scrollTo(0,0);
-            return false;
+                tabContainers.hide();
+                tabContainers.filter(hash).show();
+                $('ul.tabNavigation a').removeClass('selected');
+                $('ul.tabNavigation a[href="' + hash + '"]').addClass('selected');
+                window.scrollTo(0,0);
+                return false;
         });
     });
 </script>
@@ -630,6 +629,16 @@
             "pagingType": "full_numbers"
         } );
     } );
+</script>
+<script>
+  $(window).scroll(function() {
+if ($(this).scrollTop() > 1){  
+    $('.cd-main-header').addClass("sticky");
+  }
+  else{
+    $('.cd-main-header').removeClass("sticky");
+  }
+});
 </script>
 </body>
 </html>

@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<title>Central content (SASS)</title>
+    <script type="text/javascript">
+		function toggleDiv(divId) {
+		   $("#"+divId).toggle();
+		}
+	</script>
+</head>
+<body class="nav-is-fixed">
+	<header class="cd-main-header">
+        <a class="cd-logo" href="http://www.qmul.ac.uk"><img src="http://www.qmul.ac.uk/assets2012/images/logo.png" alt="Queen Mary University of London" /></a>
+        <ul class="cd-header-buttons">
+            <li><a class="cd-search-trigger" href="#cd-search">Search<span></span></a></li>
+            <li><a class="cd-nav-trigger" href="#cd-primary-nav">Menu<span></span></a></li>
+        </ul>
+	</header>
+    
+    <section class="pageHeader">
+        <header>
+            <h1><a href="#">News</a></h1>
+        </header>
+    </section>
+    
+    <section class="jumpMenu">
+        <a class="jump" href="javascript:toggleDiv('secNav');">Secondary Nav menu</a>
+    </section>
+    
+	<main class="cd-main-content">
+		<div class="contentElement">
+            <nav class="sideNav" id="secNav">
+                <ul>
+                    <li class="previous"><a href="#">Home</a></li>
+                    <li class="previous"><a href="#">News</a></li>
+                    <li class="down currentSection"><a href="#">2015</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="content">
+                <div class="navPage">
+                    <h1 class="pageTitle">Most internet anonymity software leaks users’ details</h1>
+                    <div class="intro">
+                        <p>Services used by hundreds of thousands of people in the UK to protect their identity on the web are vulnerable to leaks, according to researchers at QMUL and others.</p>
+                    </div>
+                    
+                    <p>Monday 29 June 2015</p>
+                    <figure>
+                        <img src="images/news-image.jpg" alt="padlock" />
+                        <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</figcaption>
+                    </figure>
+                    <p>Virtual Private Networks (VPNs) are legal and <a href="http://www.globalwebindex.net/blog/vpn-infographic">increasingly popula</a>r for individuals wanting to circumvent censorship, avoid mass surveillance or access geographically limited services like Netflix and BBC iPlayer. Used by around 20 per cent of European internet users they encrypt users’ internet communications, making it more difficult for people to monitor their activities.</p>
+                    <p>The study of fourteen popular VPN providers found that eleven of them leaked information about the user because of a vulnerability known as ‘IPv6 leakage’. The leaked information ranged from the websites a user is accessing to the actual content of user communications, for example comments being posted on forums. Interactions with websites running HTTPS encryption, which includes financial transactions, were not leaked.</p>
+                    <p>The leakage occurs because network operators are increasingly deploying a new version of the protocol used to run the Internet called IPv6. IPv6 replaces the previous IPv4, but many VPNs only protect user’s IPv4 traffic. The researchers tested their ideas by choosing fourteen of the most famous VPN providers and connecting various devices to a WiFi access point which was designed to mimic the attacks hackers might use.</p>
+                    <p>Researchers attempted two of the kinds of attacks that might be used to gather user data – ‘passive monitoring’, simply collecting the unencrypted information that passed through the access point; and DNS hijacking, redirecting browsers to a controlled web server by pretending to be commonly visited websites like Google and Facebook.</p>
+                    <p>The study also examined the security of various mobile platforms when using VPNs and found that they were much more secure when using Apple’s iOS, but were still vulnerable to leakage when using Google’s Android.</p>
+                    <p>Dr Gareth Tyson, a lecturer from QMUL and co-author of the study, said:</p>
+                    <p>“There are a variety of reasons why someone might want to hide their identity online and it’s worrying that they might be vulnerable despite using a service that is specifically designed to protect them.</p>
+                    <p>“We’re most concerned for those people trying to protect their browsing from oppressive regimes. They could be emboldened by their supposed anonymity while actually revealing all their data and online activity and exposing themselves to possible repercussions.”</p>
+                    <h2>More Information</h2>
+                    <ul>
+                        <li>Find out more about <a href="http://www.eecs.qmul.ac.uk/">computer science at QMUL</a>.</li>
+                        <li>The paper ‘<a href="http://www.eecs.qmul.ac.uk/~hamed/papers/PETS2015VPN.pdf">A Glance through the VPN Looking Glass: IPv6 Leakage and DNS Hijacking in Commercial VPN clients</a>’ by V. Perta, M. Barbera, G. Tyson, H. Haddadi, A. Mei will be presented at the <a href="https://petsymposium.org/2015/">Privacy Enhancing Technologies Symposium</a> on Tuesday 30 June 2015.</li>
+                    </ul>
+                    <p>For media information, contact:</p>
+                    <p><strong>Will Hoyles</strong><br />Public Relations Manager<br />Queen Mary University of London<br />email: <a href='mailto:w.hoyles@qmul.ac.uk'>w.hoyles@qmul.ac.uk</a></p>
+                    
+                    <div class="related-news">
+				        <h3>Related items</h3>
+                        <div class="row">
+                            <div class="one-third column noPad">
+                                <a href="http://www.qmul.ac.uk/media/news/items/se/158427.html"><img src="http://www.qmul.ac.uk/media/news/items/se/images/item158427.jpg" alt="Study finds pet owners reluctant to face up to their cats’ kill count" class="heroImage" /></a><br /><a href="http://www.qmul.ac.uk/media/news/items/se/158427.html">Study finds pet owners reluctant to face up to their cats’ kill count</a> <br /> <span class="small">26 June 2015</span>
+                            </div>
+                            <div class="one-third column noPad">
+                                <a href="http://www.qmul.ac.uk/media/news/items/se/157463.html"><img src="http://www.qmul.ac.uk/media/news/items/se/images/item157463.jpg" alt="QMUL appoints new Vice Principal for Science and Engineering" class="heroImage" /></a><br /><a href="http://www.qmul.ac.uk/media/news/items/se/157463.html">QMUL appoints new Vice Principal for Science and Engineering</a> <br /> <span class="small">10 June 2015</span>
+                            </div>
+                            <div class="one-third column noPad">
+                                <a href="http://www.qmul.ac.uk/media/news/items/se/155810.html"><img src="http://www.qmul.ac.uk/media/news/items/se/images/item155810.jpg" alt="QMUL takes part in Digital Shoreditch Festival 2015" class="heroImage" /></a><br /><a href="http://www.qmul.ac.uk/media/news/items/se/155810.html">QMUL takes part in Digital Shoreditch Festival 2015</a> <br /> <span class="small">13 May 2015</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="rtt">
+                        <a class="scroll" href="#top"><img alt="Return to top" src="http://www.qmul.ac.uk/assets2013/images/top.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</main>
+
+	<div class="cd-overlay"></div>
+    
+	<nav class="cd-nav">
+		<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+            
+            <li class="has-children">
+				<a href="content.html">Study</a>
+				<ul class="cd-secondary-nav three-column-list is-hidden">
+                    <li class="go-back"><a href="#0">Previous</a></li>
+					<li class="see-all"><a href="content.html">Study subjects</a></li>
+                    <li><a href="content.html">Astronomy and astrophysics</a></li>
+                    <li><a href="content.html">Biological and biomedical sciences</a></li>
+                    <li><a href="content.html">Business and management</a></li>
+                    <li><a href="content.html">Chemical sciences</a></li>
+                    <li><a href="content.html">Comparative literature</a></li>
+                    <li><a href="content.html">Computer science</a></li>
+                    <li><a href="content.html">Dentistry</a></li>
+                    <li><a href="content.html">Design</a></li>
+                    <li><a href="content.html">Drama</a></li>
+                    <li><a href="content.html">Economics and finance</a></li>
+                    <li><a href="content.html">Electronic engineering, telecommunications, music and audio systems</a></li>
+                    <li><a href="content.html">Engineering</a></li>
+                    <li><a href="content.html">English</a></li>
+                    <li><a href="content.html">Film studies</a></li>
+                    <li><a href="content.html">Geography and environmental science</a></li>
+                    <li><a href="content.html">Global health</a></li>
+                    <li><a href="content.html">History</a></li>
+                    <li><a href="content.html">Information technology management for business</a></li>
+                    <li><a href="content.html">Languages and cultures</a></li>
+                    <li><a href="content.html">Law</a></li>
+                    <li><a href="content.html">Linguistics</a></li>
+                    <li><a href="content.html">Materials science and engineering</a></li>
+                    <li><a href="content.html">Mathematical sciences</a></li>
+                    <li><a href="content.html">Medicine</a></li>
+                    <li><a href="content.html">Multimedia and arts technology</a></li>
+                    <li><a href="content.html">Physics</a></li>
+                    <li><a href="content.html">Politics and international relations</a></li>
+                    <li><a href="content.html">Psychology and neuroscience</a></li>
+                    <li><a href="content.html">Statistics</a></li>
+				</ul>
+			</li>
+            
+            <li class="has-children">
+				<a href="content.html">Research</a>
+				<ul class="cd-secondary-nav three-column-list is-hidden">
+                    <li class="go-back"><a href="#0">Previous</a></li>
+					<li class="see-all"><a href="content.html">Research subjects</a></li>
+                    <li><a href="content.html">Astronomy and astrophysics</a></li>
+                    <li><a href="content.html">Biological and biomedical sciences</a></li>
+                    <li><a href="content.html">Business and management</a></li>
+                    <li><a href="content.html">Chemical sciences</a></li>
+                    <li><a href="content.html">Comparative literature</a></li>
+                    <li><a href="content.html">Computer science</a></li>
+                    <li><a href="content.html">Dentistry</a></li>
+                    <li><a href="content.html">Design</a></li>
+                    <li><a href="content.html">Drama</a></li>
+                    <li><a href="content.html">Economics and finance</a></li>
+                    <li><a href="content.html">Electronic engineering, telecommunications, music and audio systems</a></li>
+                    <li><a href="content.html">Engineering</a></li>
+                    <li><a href="content.html">English</a></li>
+                    <li><a href="content.html">Film studies</a></li>
+                    <li><a href="content.html">Geography and environmental science</a></li>
+                    <li><a href="content.html">Global health</a></li>
+                    <li><a href="content.html">History</a></li>
+                    <li><a href="content.html">Information technology management for business</a></li>
+                    <li><a href="content.html">Languages and cultures</a></li>
+                    <li><a href="content.html">Law</a></li>
+                    <li><a href="content.html">Linguistics</a></li>
+                    <li><a href="content.html">Materials science and engineering</a></li>
+                    <li><a href="content.html">Mathematical sciences</a></li>
+                    <li><a href="content.html">Medicine</a></li>
+                    <li><a href="content.html">Multimedia and arts technology</a></li>
+                    <li><a href="content.html">Physics</a></li>
+                    <li><a href="content.html">Politics and international relations</a></li>
+                    <li><a href="content.html">Psychology and neuroscience</a></li>
+                    <li><a href="content.html">Statistics</a></li>
+				</ul>
+			</li>
+            
+            <li class="has-children">
+				<a href="content.html">Why choose us?</a>
+				<ul class="cd-secondary-nav oneColumn is-hidden">
+                    <li class="go-back"><a href="#0">Previous</a></li>
+					<li class="see-all"><a href="content.html">Reasons to choose us</a></li>
+                    <div class="navPromo">
+                        <a href="#"><img alt="Students by the canal" src="http://www.qmul.ac.uk/images/undergrad/64206.jpg"></a>
+                        <p><a href="#">Join us at our open day</a><br />26 and 27 June</p>
+                    </div>
+                    <li><a href="content.html">Rankings and reputation</a></li>
+                    <li><a href="content.html">Research excellence</a></li>
+                    <li><a href="content.html">International focus</a></li>
+                    <li><a href="content.html">Career success</a></li>
+                    <li><a href="content.html">Student life</a></li>
+                    <li><a href="content.html">Support and funding</a></li>
+                    <li><a href="content.html">Our campus</a></li>
+                    <li><a href="content.html">London location</a></li>
+				</ul>
+			</li>
+		</ul> <!-- primary-nav -->
+	</nav> <!-- cd-nav -->
+
+	<div id="cd-search" class="cd-search">
+		<form>
+			<input type="search" placeholder="Search...">
+		</form>
+	</div>
+    
+    <div class="footerWrapper">
+        
+        <div class="socialWrapper">
+            <header>
+                <h1>Connect with QMUL on social media</h1>
+            </header>
+            
+            <ul>
+                <li><a class="t" href="http://twitter.com/QMUL/"><img src="images/icons/64-twitter.png" alt="Twitter icon" /></a></li>
+                <li><a class="fb" href="http://www.facebook.com/QMLnews/"><img src="images/icons/64-facebook.png" alt="Facebook icon" /></a></li>
+                <li><a class="yt" href="#"><img src="images/icons/64-youtube.png" alt="YouTube icon" /></a></li>
+                <li><a class="f" href="#"><img src="images/icons/64-flickr.png" alt="Flickr icon" /></a></li>
+                <li><a class="i" href="#"><img src="images/icons/64-instagram.png" alt="Soundcloud icon" /></a></li>
+                <li><a class="li last" href="#"><img src="images/icons/64-linkedin.png" alt="Linkedin icon" /></a></li>
+            </ul>
+        </div>
+        
+        <div class="fa-footer">
+            <div class="row">
+                <div class="one-third column noPad">
+                    <h3>Footer heading</h3>
+                    <ul>
+                        <li><a href="#">Alumni</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Healthcare services</a></li>
+                        <li><a href="#">How to find us</a></li>
+                    </ul>
+                    <h3>Footer heading</h3>
+                    <ul>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">MyQMUL</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Another footer link</a></li>
+                    </ul>
+                </div>
+                <div class="one-third column noPad">
+                    <h3>Footer heading</h3>
+                    <ul>
+                        <li><a href="#">Non-academic services</a></li>
+                        <li><a href="#">Research centres</a></li>
+                        <li><a href="#">Schools and Institutes</a></li>
+                        <li><a href="#">Staff Intranet</a></li>
+                        <li><a href="#">Another footer link</a></li>
+                        <li><a href="#">Another footer link</a></li>
+                        <li><a href="#">Another footer link</a></li>
+                        <li><a href="#">Another footer link</a></li>
+                    </ul>
+                </div>
+                <div class="one-third column noPad last">
+                    <h3>Footer heading</h3>
+                    <ul>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">MyQMUL</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Another footer link</a></li>
+                    </ul>
+                    <h3>Footer heading</h3>
+                    <ul>
+                        <li><a href="#">Alumni</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Healthcare services</a></li>
+                        <li><a href="#">How to find us</a></li>
+                        <li><a href="#">Another footer link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="footerLinks">
+				<ul>
+					<li><a href="#">Contact</a></li>
+                    <li><a href="http://www.qmul.ac.uk/site/sitemap/" title="Detailed site map">Site Map</a></li>
+					<li><a href="http://www.qmul.ac.uk/site/privacy/" title="Privacy and data protection statement">Privacy and cookies</a></li>
+					<li><a href="http://www.qmul.ac.uk/site/disclaimer/" title="Disclaimer">Disclaimer</a></li>
+					<li class="last"><a href="http://www.qmul.ac.uk/site/accessibility/" title="Disability and accessibility statement">Accessibility</a></li>
+				</ul>
+                <p>&copy; Queen Mary University of London, Mile End Road, London, E1 4NS, Tel: +44 (0)20 7882 5555</p>
+			</div>
+		</footer>
+	</div>
+    
+<script src="js/jquery-2.1.1.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script>
+  $(window).scroll(function() {
+if ($(this).scrollTop() > 1){  
+    $('.cd-main-header').addClass("sticky");
+  }
+  else{
+    $('.cd-main-header').removeClass("sticky");
+  }
+});
+</script>
+</body>
+</html>
