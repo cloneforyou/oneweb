@@ -22,7 +22,7 @@
         </ul>
 	</header>
     
-    <section class="hero-image">
+    <section class="home-hero-image">
         <img src="images/hero-1.jpg" alt="kitten" />
         <div class="overlay">
             <h1><a href="#">QMUL signs strategic collaboration with Chinese university</a></h1>
@@ -291,12 +291,14 @@
 <script src="js/jquery.mobile.custom.min.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
 <script>
-  $(window).scroll(function() {
-if ($(this).scrollTop() > 1){  
+$(window).scroll(function() {
+if ($(this).scrollTop() > 40){  
     $('.cd-main-header').addClass("sticky");
-  }
-  else{
+    $('.cd-logo img').attr('src', 'images/logo-sticky.png');
+}
+else{
     $('.cd-main-header').removeClass("sticky");
+    $('.cd-logo img').attr('src', 'images/logo.png');
   }
 });
 </script>

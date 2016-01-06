@@ -631,12 +631,14 @@
     } );
 </script>
 <script>
-  $(window).scroll(function() {
-if ($(this).scrollTop() > 1){  
+$(window).scroll(function() {
+if ($(this).scrollTop() > 40){  
     $('.cd-main-header').addClass("sticky");
-  }
-  else{
+    $('.cd-logo img').attr('src', 'images/logo-sticky.png');
+}
+else{
     $('.cd-main-header').removeClass("sticky");
+    $('.cd-logo img').attr('src', 'images/logo.png');
   }
 });
 </script>
