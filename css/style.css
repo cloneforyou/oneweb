@@ -1249,6 +1249,10 @@ td.group {
   box-sizing: border-box;
   padding: 1em; }
 
+.equal-height .column {
+  display: flex;
+  flex-direction: column; }
+
 @media (min-width: 750px) {
   .column, .columns {
     margin-left: 4%; }
@@ -1303,6 +1307,10 @@ td.group {
     width: 48%; } }
 .row {
   margin-bottom: 2em; }
+
+.equal-height {
+  display: flex;
+  flex-wrap: wrap; }
 
 .container:after, .row:after, .u-cf {
   content: "";
@@ -1475,6 +1483,20 @@ iframe + h2 {
 
 .overlay h1 a {
   color: #fff; }
+
+.equal-height .column p {
+  flex: 1 0 auto;
+  padding: 0.5em 0.75em; }
+
+.small-text {
+  font-size: 0.9em; }
+
+.category {
+  border-bottom: 0 none !important;
+  color: #777; }
+
+.equal-height .column .category {
+  padding: 0.5em 0.75em; }
 
 /* ----------------------------------------- */
 /* LINKS */
@@ -2133,6 +2155,16 @@ aside {
   padding: 0.25em 0.5em; }
 
 /* ----------------------------------------- */
+/* COLOURED BANDS */
+/* ----------------------------------------- */
+.band-1 {
+  background-color: #eee;
+  padding: 1em 0; }
+
+.band-fill {
+  background-color: #fff; }
+
+/* ----------------------------------------- */
 /* TABS */
 /* ----------------------------------------- */
 ul.tabNavigation {
@@ -2547,6 +2579,8 @@ ul.tabNavigation {
 
   .home-hero-image {
     margin-top: 125px; }
+    .home-hero-image img {
+      min-width: 100%; }
 
   .contentElement {
     margin: 40px 4em; }
